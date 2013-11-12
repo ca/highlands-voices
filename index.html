@@ -7,6 +7,36 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <title>Highlands Voices</title>
 <link href="css/default.min.css" rel="stylesheet" type="text/css">
+
+<style type="text/css">
+/*FUCK YOUR PRECEDENCE BITCH*/
+/*CHECK YOUR FUCKING PRIVELEGE LIKE SERIOUSLY*/
+.camera_wrap {
+    display:block!important;
+    height:409px!important;
+}
+.cameraSlide {
+    visibility: visible!important;
+    display: block!important;
+    z-index: 999!important;
+    margin-left: 0px!important;
+    margin-top: 0px!important;
+    overflow: hidden!important;
+    height:409px!important;
+    background-image:url('images/banner.jpg')!important;
+    background-position:center!important;
+}
+.banner-pos {
+    visibility: visible!important;
+    opacity: 1!important;
+}
+.underlined {
+    text-decoration:underline!important;
+}
+</style>
+
+
+
 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,600,700|Telex' rel='stylesheet' type='text/css'>
 <!--[if IE]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -125,57 +155,17 @@
     	</div>
 	</nav>
 
-    <!--banner slider-->
-        <!-- <div class="coming-content">
-         <div class="fullrow">
-             <h2>Our Website is Under Construction</h2>
-         </div>
-
-         <div class="comingInner">
-             <div class="countdown styled">
-                 <div><strong>007</strong><span>days</span></div>
-                 <div><strong>14 </strong><span>hrs</span></div>
-                 <div><strong>14 </strong><span>min</span></div>
-                 <div><strong>54 </strong><span>sec</span></div>
-             </div>
-         </div>
-        </div> -->
-
-
-
-
-
-            <div class="fullBox">
-                  <div class="camera_wrap" id="bannerR" style="display: block; height: 409px;">
-                      <div class="cameraSlide" style="visibility: visible; display: block; z-index: 999; margin-left: 0px; margin-top: 0px;overflow: hidden;height:409px;background-image:url('images/banner.jpg');background-position:center;">
-                          <!-- Get rid of all these inline style attributes -->
-                          <div class="fadeIn camera_effected banner-pos" style="visibility: visible; opacity: 1;" data-outerwidth="681" data-outerheight="264">
-                              <h2>Highlands Voices</h2>
-                              <p>We are a nationally ranked a cappella choir from Northern Highlands in Allendale, NJ.</p>
-                              <a class="bannerBtn" href="about">ABOUT US</a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-
-
-
-
-
-<!-- This here is One TYPE FIX THIS ONE BELOW     -->
-        <!-- <div class="fullBox">
-              <div class="camera_wrap camera_emboss pattern_1" id="bannerR">
-                <div data-src="./responsiveBanner/images/banner1.jpg">
-                  <div class="fadeIn camera_effected banner-pos">
-                    <h2>Beautiful &amp; Nice</h2>
-                    <p>Nonummy nibh euismod tincidunt ut laoreet dolore magna vila more syaliquam erat volutpat.
-        Ut wisi enimale sick ad minim veniam, quis nostrud exerci tation ullamcorper.</p>
-                    <a class="bannerBtn" href="#">PURCHASE NOW</a> </div>
+    <div class="fullBox">
+        <div class="camera_wrap" id="bannerR">
+            <div class="cameraSlide">
+                <div class="fadeIn camera_effected banner-pos" data-outerwidth="681" data-outerheight="264">
+                  <h2>Highlands Voices</h2>
+                  <p>We are a nationally ranked a cappella choir from Northern Highlands in Allendale, NJ.</p>
+                  <a class="bannerBtn" href="about">ABOUT US</a>
                 </div>
-              </div>
-            <div class="bottom-shadow"></div>
-        </div> -->
-    <!--End banner slider-->
+            </div>
+        </div>
+    </div>
 
     <div class="contentBox">
     <!--Static content-->
@@ -185,7 +175,7 @@
                 <h2>Music Production</h2>
                 <p>
                     Highlands Voices is releasing their very first CD this month.
-                    The title of the CD is <strong style="text-decoration:underline;">Decades</strong>
+                    The title of the CD is <strong class="underlined">Decades</strong>
                     and it includes music from every decade since their school has been established.
                 </p>
             </section>
@@ -223,7 +213,7 @@
                     <div class="portfolio-wrapper">
                			 <section id="portfolio-wrapper">
                     <ul class="portfolio four-columns">
-						
+
                         <li data-category="webDesign" class="branding responsive">
                             <a href="http://www.placehold.it/800x600" rel="prettyPhoto[pp_gal]" title="">
                                 <span class="hover-image">
@@ -238,7 +228,7 @@
                                 <span>Aenean et ultricies arcu. Vestibulum</span>
                             </div>
                         </li>
-						
+
                         <li data-category="logoDesign" class="logoDesign branding">
                             <a href="images/stpatricks-lg.jpg" rel="prettyPhoto[pp_gal]" title="ST PATRICKS CATHEDRAL">
                                  <span class="hover-image">
@@ -253,7 +243,7 @@
                                 <span>Voices performed at St. Patrick's last year</span>
                             </div>
                         </li>
-						
+
                         <li data-category="printMedia" class="webDesign">
                             <a href="http://www.placehold.it/800x600" rel="prettyPhoto[pp_gal]" title="BOBO PROJECT">
                                 <span class="hover-image">
@@ -268,7 +258,7 @@
                                 <span>Aenean et ultricies arcu. Vestibulum</span>
                             </div>
                         </li>
-						
+
                         <li data-category="webDesign" class="logoDesign branding webDesign">
                             <a href="http://www.placehold.it/800x600" rel="prettyPhoto[pp_gal]" title="Title here">
                                 <span class="hover-image">
@@ -283,7 +273,7 @@
                                 <span>Aenean et ultricies arcu. Vestibulum</span>
                             </div>
                         </li>
-						
+
                         <li data-category="responsive" class="printMedia responsive">
                             <a href="http://www.placehold.it/800x600" rel="prettyPhoto[pp_gal]" title="Title here">
                                 <span class="hover-image">
@@ -298,7 +288,7 @@
                                 <span>Aenean et ultricies arcu. Vestibulum</span>
                             </div>
                         </li>
-						
+
                         <li data-category="printMedia" class="webDesign responsive">
                             <a href="images/singoff-lg.jpg" rel="prettyPhoto[pp_gal]" title="VOICES AT SINGOFF AUDITIONS">
                                 <span class="hover-image">
@@ -313,9 +303,9 @@
                                 <span>Highlands Voices went to the Sing Off auditions</span>
                             </div>
                         </li>
-						
+
                         <li data-category="responsive" class="printMedia">
-                            <a href="images/solo-lg.jpg" rel="prettyPhoto[pp_gal]" title="2012 VOICES SOLOIST">
+                            <a href="images/solo-lg.jpg" rel="prettyPhoto[pp_gal]" title="2012 VOICES SOLOIST - JOE BAEZ">
                                 <span class="hover-image">
                                     <span class="box-links">
                                         <i class="zoom icon-zoom-in"></i>
@@ -324,11 +314,11 @@
                                 <img src="images/solo-thumb.jpg" alt=" " />
                             </a>
                             <div class="portfolio-details">
-                                <h3>Lorem ipsum dolor</h3>
-                                <span>Aenean et ultricies arcu. Vestibulum</span>
+                                <h3>Soloist Joe Baez</h3>
+                                <span>Joe sings a solo at an a cappella competition in Spring 2012</span>
                             </div>
                         </li>
-						
+
                         <li data-category="logoDesign"  class="printMedia webDesign">
                             <a href="http://www.placehold.it/800x600" rel="prettyPhoto[pp_gal]" title="Title here">
                                 <span class="hover-image">
@@ -343,7 +333,7 @@
                                 <span>Aenean et ultricies arcu. Vestibulum</span>
                             </div>
                         </li>
-						
+
                     </ul>
                 </section>
                 	<div class="clear"></div>
@@ -370,7 +360,7 @@
             </section>
 
 
-			
+
             <div class="clear"></div>
         </div>
     <!--End social block-->
