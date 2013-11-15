@@ -11,9 +11,6 @@
 <!--[if IE]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-
-<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-
 </head>
 <body>
 <!--main body-->
@@ -125,6 +122,7 @@
     	</div>
 	</nav>
 
+    <!-- Banner -->
     <div class="fullBox">
         <div class="camera_wrap" id="bannerR">
             <div class="cameraSlide">
@@ -141,7 +139,7 @@
     <!--Static content-->
         <div class="staticBox row services_infoA">
             <section class="col3 block1">
-                <a href="#" class="serviceInfo icon-microphone"></a>
+                <a class="serviceInfo icon-microphone"></a>
                 <h2>Music Production</h2>
                 <p>
                     Highlands Voices is releasing their very first CD this month.
@@ -150,7 +148,7 @@
                 </p>
             </section>
             <section class="col3 block2">
-                <a href="#" class="serviceInfo icon-trophy"></a>
+                <a class="serviceInfo icon-trophy"></a>
                 <h2>ICHSA Champions</h2>
                 <p>
                     Last choir season, Voices took home the ICHSA Mid-Atlantic Regional Title in the semi-finals.
@@ -158,7 +156,7 @@
                 </p>
             </section>
             <section class="col3 last block3">
-                <a href="#" class="serviceInfo icon-music"></a>
+                <a class="serviceInfo icon-music"></a>
                 <h2>Live Performances</h2>
                 <p>
                     Voices performs live a cappella at Northern Highlands High School.
@@ -168,150 +166,148 @@
             <div class="clear"></div>
         </div>
     <!--End Static content-->
-
-
-    <div class="half-space"></div>
+        <div class="half-space"></div>
     <!--portfolio-->
-            <div class="contentBox">
-                <div class="row">
-                    <section id="options">
-                        <ul id="filters" class="porfolio-nav clearfix" data-option-key="filter">
-                        </ul>
-                    </section>
-                    <div class="clear"></div>
-
-                    <div class="portfolio-wrapper">
-               			 <section id="portfolio-wrapper">
-                    <ul class="portfolio four-columns">
-
-                        <li data-category="webDesign" class="branding responsive">
-                            <a href="images/tricia-lg.jpg" rel="prettyPhoto[pp_gal]" title="TRICIA SINGING A SOLO">
-                                <span class="hover-image">
-                                    <span class="box-links">
-                                        <i class="zoom icon-zoom-in"></i>
-                                    </span>
-                                </span>
-                                <img src="images/tricia-thumb.jpg" alt=" " />
-                            </a>
-                            <div class="portfolio-details">
-                                <h3>Tricia Wilson Singing a Solo</h3>
-                                <span>Tricia performs a solo in a competition</span>
-                            </div>
-                        </li>
-
-                        <li data-category="logoDesign" class="logoDesign branding">
-                            <a href="images/stpatricks-lg.jpg" rel="prettyPhoto[pp_gal]" title="ST PATRICKS CATHEDRAL">
-                                 <span class="hover-image">
-                                    <span class="box-links">
-                                        <i class="zoom icon-zoom-in"></i>
-                                    </span>
-                                </span>
-                                <img src="images/stpatricks-thumb.jpg" alt=" " />
-                            </a>
-                            <div class="portfolio-details">
-                                <h3>St. Patrick's Cathedral</h3>
-                                <span>Voices performed at St. Patrick's last year</span>
-                            </div>
-                        </li>
-
-                        <li data-category="printMedia" class="webDesign">
-                            <a href="images/grads-lg.jpg" rel="prettyPhoto[pp_gal]" title="VOICES GRADS SINGING AT CONCERT IN 2012">
-                                <span class="hover-image">
-                                    <span class="box-links">
-                                        <i class="zoom icon-zoom-in"></i>
-                                    </span>
-                                </span>
-                                <img src="images/grads-thumb.jpg" alt=" " />
-                            </a>
-                            <div class="portfolio-details">
-                                <h3>Voices Grads at Concert 2012</h3>
-                                <span>Spring 2012 Voices Concert</span>
-                            </div>
-                        </li>
-
-                        <li data-category="webDesign" class="logoDesign branding webDesign">
-                            <a href="images/santa-lg.jpg" rel="prettyPhoto[pp_gal]" title="VOICES VISITS SANTA DURING THE HOLIDAYS">
-                                <span class="hover-image">
-                                    <span class="box-links">
-                                        <i class="zoom icon-zoom-in"></i>
-                                    </span>
-                                </span>
-                                <img src="images/santa-thumb.jpg" alt=" " />
-                            </a>
-                            <div class="portfolio-details">
-                                <h3>Voices Visits Santa</h3>
-                                <span>Aenean et ultricies arcu. Vestibulum</span>
-                            </div>
-                        </li>
-
-                        <li data-category="responsive" class="printMedia responsive">
-                            <a href="http://www.placehold.it/800x600" rel="prettyPhoto[pp_gal]" title="Title here">
-                                <span class="hover-image">
-                                    <span class="box-links">
-                                        <i class="zoom icon-zoom-in"></i>
-                                    </span>
-                                </span>
-                                <img src="http://www.placehold.it/255x191" alt=" " />
-                            </a>
-                            <div class="portfolio-details">
-                                <h3>Lorem ipsum dolor</h3>
-                                <span>Aenean et ultricies arcu. Vestibulum</span>
-                            </div>
-                        </li>
-
-                        <li data-category="printMedia" class="webDesign responsive">
-                            <a href="images/singoff-lg.jpg" rel="prettyPhoto[pp_gal]" title="VOICES AT SINGOFF AUDITIONS">
-                                <span class="hover-image">
-                                    <span class="box-links">
-                                        <i class="zoom icon-zoom-in"></i>
-                                    </span>
-                                </span>
-                                <img src="images/singoff-thumb.jpg" alt=" " />
-                            </a>
-                            <div class="portfolio-details">
-                                <h3>Voices at Sing Off auditions</h3>
-                                <span>Highlands Voices went to the Sing Off auditions</span>
-                            </div>
-                        </li>
-
-                        <li data-category="responsive" class="printMedia">
-                            <a href="images/solo-lg.jpg" rel="prettyPhoto[pp_gal]" title="2012 VOICES SOLOIST - JOE BAEZ">
-                                <span class="hover-image">
-                                    <span class="box-links">
-                                        <i class="zoom icon-zoom-in"></i>
-                                    </span>
-                                </span>
-                                <img src="images/solo-thumb.jpg" alt=" " />
-                            </a>
-                            <div class="portfolio-details">
-                                <h3>Soloist Joe Baez</h3>
-                                <span>Joe sings a solo at an a cappella competition in Spring 2012</span>
-                            </div>
-                        </li>
-
-                        <li data-category="logoDesign"  class="printMedia webDesign">
-                            <a href="http://www.placehold.it/800x600" rel="prettyPhoto[pp_gal]" title="Title here">
-                                <span class="hover-image">
-                                    <span class="box-links">
-                                        <i class="zoom icon-zoom-in"></i>
-                                    </span>
-                                </span>
-                                <img src="http://www.placehold.it/255x191" alt=" " />
-                            </a>
-                            <div class="portfolio-details">
-                                <h3>Lorem ipsum dolor</h3>
-                                <span>Aenean et ultricies arcu. Vestibulum</span>
-                            </div>
-                        </li>
-
+        <div class="contentBox">
+            <div class="row">
+                <section id="options">
+                    <ul id="filters" class="porfolio-nav clearfix" data-option-key="filter">
                     </ul>
                 </section>
-                	<div class="clear"></div>
-            </div>
+                <div class="clear"></div>
+
+                <div class="portfolio-wrapper">
+                    <section id="portfolio-wrapper">
+                        <ul class="portfolio four-columns">
+
+                            <li>
+                                <a href="images/tricia-lg.jpg" rel="prettyPhoto[pp_gal]" title="TRICIA SINGING A SOLO">
+                                    <span class="hover-image">
+                                        <span class="box-links">
+                                            <i class="zoom icon-zoom-in"></i>
+                                        </span>
+                                    </span>
+                                    <img src="images/tricia-thumb.jpg" alt=" " />
+                                </a>
+                                <div class="portfolio-details">
+                                    <h3>Tricia Wilson Singing a Solo</h3>
+                                    <span>Tricia performs a solo in a competition</span>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a href="images/stpatricks-lg.jpg" rel="prettyPhoto[pp_gal]" title="ST PATRICKS CATHEDRAL">
+                                     <span class="hover-image">
+                                        <span class="box-links">
+                                            <i class="zoom icon-zoom-in"></i>
+                                        </span>
+                                    </span>
+                                    <img src="images/stpatricks-thumb.jpg" alt=" " />
+                                </a>
+                                <div class="portfolio-details">
+                                    <h3>St. Patrick's Cathedral</h3>
+                                    <span>Voices performed at St. Patrick's last year</span>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a href="images/grads-lg.jpg" rel="prettyPhoto[pp_gal]" title="VOICES GRADS SINGING AT CONCERT IN 2012">
+                                    <span class="hover-image">
+                                        <span class="box-links">
+                                            <i class="zoom icon-zoom-in"></i>
+                                        </span>
+                                    </span>
+                                    <img src="images/grads-thumb.jpg" alt=" " />
+                                </a>
+                                <div class="portfolio-details">
+                                    <h3>Voices Grads at Concert 2012</h3>
+                                    <span>Spring 2012 Voices Concert</span>
+                                </div>
+                            </li> <!-- Fix Lg Img -->
+
+                            <li>
+                                <a href="images/santa-lg.jpg" rel="prettyPhoto[pp_gal]" title="VOICES VISITS SANTA DURING THE HOLIDAYS">
+                                    <span class="hover-image">
+                                        <span class="box-links">
+                                            <i class="zoom icon-zoom-in"></i>
+                                        </span>
+                                    </span>
+                                    <img src="images/santa-thumb.jpg" alt=" " />
+                                </a>
+                                <div class="portfolio-details">
+                                    <h3>Voices Visits Santa</h3>
+                                    <span>Aenean et ultricies arcu. Vestibulum</span>
+                                </div>
+                            </li> <!-- Fix Lg Img -->
+
+                            <li>
+                                <a href="http://www.placehold.it/800x600" rel="prettyPhoto[pp_gal]" title="Title here">
+                                    <span class="hover-image">
+                                        <span class="box-links">
+                                            <i class="zoom icon-zoom-in"></i>
+                                        </span>
+                                    </span>
+                                    <img src="http://www.placehold.it/255x191" alt=" " />
+                                </a>
+                                <div class="portfolio-details">
+                                    <h3>Lorem ipsum dolor</h3>
+                                    <span>Aenean et ultricies arcu. Vestibulum</span>
+                                </div>
+                            </li> <!-- Get Img In -->
+
+                            <li>
+                                <a href="images/singoff-lg.jpg" rel="prettyPhoto[pp_gal]" title="VOICES AT SINGOFF AUDITIONS">
+                                    <span class="hover-image">
+                                        <span class="box-links">
+                                            <i class="zoom icon-zoom-in"></i>
+                                        </span>
+                                    </span>
+                                    <img src="images/singoff-thumb.jpg" alt=" " />
+                                </a>
+                                <div class="portfolio-details">
+                                    <h3>Voices at Sing Off auditions</h3>
+                                    <span>Highlands Voices went to the Sing Off auditions</span>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a href="images/solo-lg.jpg" rel="prettyPhoto[pp_gal]" title="2012 VOICES SOLOIST - JOE BAEZ">
+                                    <span class="hover-image">
+                                        <span class="box-links">
+                                            <i class="zoom icon-zoom-in"></i>
+                                        </span>
+                                    </span>
+                                    <img src="images/solo-thumb.jpg" alt=" " />
+                                </a>
+                                <div class="portfolio-details">
+                                    <h3>Soloist Joe Baez</h3>
+                                    <span>Joe sings a solo at an a cappella competition in Spring 2012</span>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a href="http://www.placehold.it/800x600" rel="prettyPhoto[pp_gal]" title="Title here">
+                                    <span class="hover-image">
+                                        <span class="box-links">
+                                            <i class="zoom icon-zoom-in"></i>
+                                        </span>
+                                    </span>
+                                    <img src="http://www.placehold.it/255x191" alt=" " />
+                                </a>
+                                <div class="portfolio-details">
+                                    <h3>Lorem ipsum dolor</h3>
+                                    <span>Aenean et ultricies arcu. Vestibulum</span>
+                                </div>
+                            </li> <!-- Get Img In -->
+
+                        </ul>
+                    </section>
+            	    <div class="clear"></div>
                 </div>
-           </div>
+            </div>
+        </div>
     <!--End portfolio-->
-    <div class="space"></div>
+        <div class="space"></div>
     <!--Social block-->
     	<div class="socialBlock row">
         	<section class="twitterBlock" id="ticker">
@@ -324,8 +320,7 @@
             <div class="clear"></div>
         </div>
     <!--End social block-->
-    <div class="space"></div>
-
+        <div class="space"></div>
     </div>
     <!--Footer-->
      	<footer id="footer" class="clearfix">
@@ -335,7 +330,7 @@
                 		<h4>Flickr Stream</h4>
                     </div>
                     <div class="flickr-feed">
-                      <script type="text/javascript" src="http://www.flickr.com/badge_code.gne?count=8&amp;display=random&amp;size=square&amp;nsid=52617155@N08&amp;raw=1"></script>
+                      <script type="text/javascript" src="http://www.flickr.com/badge_code.gne?count=8&amp;display=random&amp;size=square&amp;nsid=108734702@N04&amp;raw=1"></script>
                       <div class="clear"></div>
                     </div>
                 </section>
@@ -346,9 +341,9 @@
                     </div>
                     <ul>
                     	<li><i class="icon-angle-right"></i><a href="#">Home</a></li>
-                        <li><i class="icon-angle-right"></i><a href="#">Shipping & Returns</a></li>
-                        <li><i class="icon-angle-right"></i><a href="#">Secure Shopping</a></li>
-                        <li class="last"><i class="icon-angle-right"></i><a href="#">Contact us</a></li>
+                        <li><i class="icon-angle-right"></i><a href="#">Music</a></li>
+                        <li><i class="icon-angle-right"></i><a href="#">Gallery</a></li>
+                        <li class="last"><i class="icon-angle-right"></i><a href="#">Blog</a></li>
                     </ul>
                 </section>
 
@@ -357,10 +352,10 @@
                 		<h4>Information</h4>
                     </div>
                     <ul>
-                    	<li><i class="icon-angle-right"></i><a href="#">Press Room</a></li>
-                        <li><i class="icon-angle-right"></i><a href="#">Help</a></li>
-                        <li><i class="icon-angle-right"></i><a href="#">Terms & Conditionsg</a></li>
-                        <li class="last"><i class="icon-angle-right"></i><a href="#">Personal information</a></li>
+                    	<li><i class="icon-angle-right"></i><a href="#">About Voices</a></li>
+                        <li><i class="icon-angle-right"></i><a href="#">Contact Us</a></li>
+                        <li><i class="icon-angle-right"></i><a href="#">Site Information</a></li>
+                        <li class="last"><i class="icon-angle-right"></i><a href="#">Webmaster Information</a></li>
                     </ul>
                 </section>
 
@@ -369,7 +364,7 @@
                 		<h4>GET IN TOUCH</h4>
                     </div>
                     <ul>
-                    	<li class="f-phone"><i class="icon-phone"></i><a href="#">Call Us +001 555 801</a></li>
+                    	<li class="f-phone"><i class="icon-phone"></i><a href="#">201 327 2700 x ####</a></li>
                         <li class="f-mail"><i class="icon-envelope"></i><a href="mailto:highlandsvoices@gmail.com">highlandsvoices@gmail.com</a></li>
                         <li class="last f-map"><i class="icon-map-marker"></i><a href="#">Find us on Google Maps</a></li>
                     </ul>
@@ -378,21 +373,21 @@
             </div>
         </footer>
         <footer id="footerBottom" class="clearfix">
-        <div class="contentBox">
-        	<p>&copy; 2013 Highlands Voices. All Rights Reserved.</p>
-            <span>Site by The Grid Media, LLC.</span>
-            <ul class="social-icons">
-            	<li class="twitter"><a href="http://www.twitter.com/highlandsvoices"><i class="icon-twitter"></i></a></li>
-                <li class="facebook"><a href="http://www.facebook.com/HighlandsVoices"><i class="icon-facebook"></i></a></li>
-                <li class="youtube"><a href="http://www.youtube.com/user/HighlandsVoices"><i class="icon-youtube"></i></a></li>
-                <li class="tumblr last"><a href="http://blog.highlandsvoices.com"><i class="icon-tumblr"></i></a></li>
-            </ul>
-           </div>
+            <div class="contentBox">
+            	<p>&copy; 2013 Highlands Voices. All Rights Reserved.</p>
+                <span>Site by The Grid Media, LLC.</span>
+                <ul class="social-icons">
+                	<li class="twitter"><a href="http://www.twitter.com/highlandsvoices"><i class="icon-twitter"></i></a></li>
+                    <li class="facebook"><a href="http://www.facebook.com/HighlandsVoices"><i class="icon-facebook"></i></a></li>
+                    <li class="youtube"><a href="http://www.youtube.com/highlandsvoices"><i class="icon-youtube"></i></a></li>
+                    <li class="tumblr last"><a href="http://blog.highlandsvoices.com"><i class="icon-tumblr"></i></a></li>
+                </ul>
+            </div>
         </footer>
-      <!--End footer-->
-
+    <!--End footer-->
 </div>
 <!--End main body-->
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="js/default.js"></script>
 </body>
 </html>

@@ -11,64 +11,16 @@
 <!--[if IE]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-
-<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-
 </head>
 <body onLoad="initialize()">
-<!--main body-->
 <div id="wrapper">
     <header id="header">
-        <!--Header top-->
         	<div class="headerTop">
             	<div class="headerTopLine"></div>
                 <div class="contentBox">
-                    <!--Cart box-->
-                    <a href="javascript:void(0)">
-                    	<div class="cartBox">
-                        	<span class="cartIcon"></span>
-                            <h4>0 item(s)</h4>
-                            <!-- <div class="cartContent" style="display:none;">
-                                <p class="itemAdded">Thank you. You have succesfully added 1 item</p>
-                                <ul>
-                                    <li>
-                                        <a class="product-image" href="#"><img src="images/productThumb.jpg" alt="thumb"></a>
-                                        <div class="miniProDetail">
-                                            <a class="btn-remove" href="#">Remove</a>
-                                            <a class="btn-edit" href="#">edit</a>
-                                            <p class="productName"><a href="#">Product Name</a></p>
-                                            <strong>1</strong> x
-                                            <span class="price">$340.00</span>
-                                        </div>
-                                        <div class="clear"></div>
-                                    </li>
-                                    <li>
-                                        <a class="product-image" href="#"><img src="images/productThumb.jpg" alt="thumb"></a>
-                                        <div class="miniProDetail">
-                                            <a class="btn-remove" href="#">Remove</a>
-                                            <a class="btn-edit" href="#">edit</a>
-                                            <p class="productName"><a href="#">Product Name</a></p>
-                                            <strong>1</strong> x
-                                            <span class="price">$340.00</span>
-                                        </div>
-                                        <div class="clear"></div>
-                                    </li>
-                                </ul>
-                                <div class="actionCheckout">
-                                     <p class="subtotal">
-                                       <span class="label">Total:</span>
-                                       <span class="price">$340.00</span>
-                                     </p>
-                                     <a class="viewCart button left">View cart</a>
-                                     <a class="viewCheckout button right">View checkout</a>
-                                </div>
-                            </div> -->
-                        </div></a>
-                    <!--End cart box-->
                 </div>
                 <div class="clear"></div>
             </div>
-        <!--End Header top-->
         <div class="contentBox">
         	<div class="headerLeft">
             </div>
@@ -91,10 +43,9 @@
                     <li><a href="videos">Videos</a></li>
                 </ul>
             </li>
-            <li><a href="blog">Blog</a></li>
+            <li><a href="http://blog.highlandsvoices.com">Blog</a></li>
             <li class="current"><a href="contact">Contact</a></li>
         </ul>
-        <a class="buyTheme" href="shop">SHOP</a>
 	</nav>
 
 	<nav class="contentBox" id="mobMenu">
@@ -116,7 +67,7 @@
     	                    <li><a href="videos">Videos</a></li>
     	                </ul>
     	            </li>
-    	            <li><a href="blog">Blog</a></li>
+    	            <li><a href="http://blog.highlandsvoices.com">Blog</a></li>
     	            <li><a href="contact">Contact</a></li>
     	            <li><a href="shop">Shop</a></li>
     	        	<span class="clearfix"></span>
@@ -124,72 +75,25 @@
     	    </div>
     	</div>
 	</nav>
-    
+
     <!--Breadcrumbs start-->
     	<div class="breadcrumbs">
         	<div class="contentBox">
         		<h2 class="pageTitle">Contact</h2>
                 <ul id="breadcrumb">
-                	<li><a href="#">Home</a> <span>/</span></li>
+                	<li><a href="/">Home</a> <span>/</span></li>
                     <li>Contact</li>
                 </ul>
-            </div>    
+            </div>
         </div>
     <!--End breadcrumbs-->
-    
+
     <!--Contact map-->
     	<div class="fullBox">
               <div id="map_canvas" style="width:100%; height:500px"></div>
-
-    	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-		<script type="text/javascript">
-			function initialize() {
-				var latlng = new google.maps.LatLng(48.856614, 2.352222);
-				var settings = {
-					zoom: 15,
-					center: latlng,
-					mapTypeControl: true,
-					mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
-					navigationControl: true,
-					navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
-					mapTypeId: google.maps.MapTypeId.ROADMAP};
-						var map = new google.maps.Map(document.getElementById("map_canvas"), settings);
-						var contentString = '<div id="content">'+
-							'<div id="siteNotice">'+
-							'</div>'+
-							'<h3 id="firstHeading" class="firstHeading">Paris</h3>'+
-							'<div id="bodyContent">'+
-							'<p style="width:250px;">Paris is a prominent centre in the arts, and has long been a city in which many artists came to learn their craft from the masters and to draw inspiration from its talented pool of artists.</p>'+
-							'</div>'+
-							'</div>';
-						var infowindow = new google.maps.InfoWindow({
-							content: contentString
-						});
-						
-				var companyImage = new google.maps.MarkerImage('images/mapLogo.png',
-					new google.maps.Size(100,50),
-					new google.maps.Point(0,0),
-					new google.maps.Point(50,50)
-				);
-				
-				var companyPos = new google.maps.LatLng(48.856614, 2.352222);
-
-				var companyMarker = new google.maps.Marker({
-					position: companyPos,
-					map: map,
-					icon: companyImage,
-					title:"Sancia",
-					zIndex: 3});
-				
-				google.maps.event.addListener(companyMarker, 'click', function() {
-					infowindow.open(map,companyMarker);
-				});
-			}
-		</script>
-
         </div>
     <!--End contact map-->
-    
+
     <div class="contentBox">
 			<!--Main col-->
             	<div class="colMain left">
@@ -207,7 +111,7 @@
                                <input type="text" required>
                            </div>
                       </div>
-                      
+
                       <div class="inputBox inCol">
                               <label>Email <em>*</em></label>
                               <input type="text" validate="email" name="email" required>
@@ -220,9 +124,9 @@
                        <button class="button btnLarge" type="submit">Send Message</button>
                        </form>
                       <div class="clearfix space25"></div>
-                      	
-                    </section>  
-                  <!--End start of contact-->     
+
+                    </section>
+                  <!--End start of contact-->
                 </div>
             <!--End main col-->
             <!--Right sidebar-->
@@ -240,10 +144,10 @@
                         </div>
                     </div>
                     <!--End recent post-->
-                    
+
                 </div>
             <!--End right sidebar-->
-    
+
     </div>
     <!--Footer-->
      	<footer id="footer" class="clearfix">
@@ -253,7 +157,7 @@
                 		<h4>Flickr Stream</h4>
                     </div>
                     <div class="flickr-feed">
-                      <script type="text/javascript" src="http://www.flickr.com/badge_code.gne?count=8&amp;display=random&amp;size=square&amp;nsid=52617155@N08&amp;raw=1"></script>
+                      <script type="text/javascript" src="http://www.flickr.com/badge_code.gne?count=8&amp;display=random&amp;size=square&amp;nsid=108734702@N04&amp;raw=1"></script>
                       <div class="clear"></div>
                     </div>
                 </section>
@@ -264,9 +168,9 @@
                     </div>
                     <ul>
                     	<li><i class="icon-angle-right"></i><a href="#">Home</a></li>
-                        <li><i class="icon-angle-right"></i><a href="#">Shipping & Returns</a></li>
-                        <li><i class="icon-angle-right"></i><a href="#">Secure Shopping</a></li>
-                        <li class="last"><i class="icon-angle-right"></i><a href="#">Contact us</a></li>
+                        <li><i class="icon-angle-right"></i><a href="#">Music</a></li>
+                        <li><i class="icon-angle-right"></i><a href="#">Gallery</a></li>
+                        <li class="last"><i class="icon-angle-right"></i><a href="#">Blog</a></li>
                     </ul>
                 </section>
 
@@ -275,10 +179,10 @@
                 		<h4>Information</h4>
                     </div>
                     <ul>
-                    	<li><i class="icon-angle-right"></i><a href="#">Press Room</a></li>
-                        <li><i class="icon-angle-right"></i><a href="#">Help</a></li>
-                        <li><i class="icon-angle-right"></i><a href="#">Terms & Conditionsg</a></li>
-                        <li class="last"><i class="icon-angle-right"></i><a href="#">Personal information</a></li>
+                    	<li><i class="icon-angle-right"></i><a href="#">About Voices</a></li>
+                        <li><i class="icon-angle-right"></i><a href="#">Contact Us</a></li>
+                        <li><i class="icon-angle-right"></i><a href="#">Site Information</a></li>
+                        <li class="last"><i class="icon-angle-right"></i><a href="#">Webmaster Information</a></li>
                     </ul>
                 </section>
 
@@ -287,9 +191,8 @@
                 		<h4>GET IN TOUCH</h4>
                     </div>
                     <ul>
-                    	<li class="f-phone"><i class="icon-phone"></i><a href="#">Call Us +001 555 801</a></li>
+                    	<li class="f-phone"><i class="icon-phone"></i><a href="#">201 327 2700 x ####</a></li>
                         <li class="f-mail"><i class="icon-envelope"></i><a href="mailto:highlandsvoices@gmail.com">highlandsvoices@gmail.com</a></li>
-                        <li class="f-fax"><i class="icon-print"></i><a href="#">Fax +001 555 802</a></li>
                         <li class="last f-map"><i class="icon-map-marker"></i><a href="#">Find us on Google Maps</a></li>
                     </ul>
                 </section>
@@ -297,21 +200,60 @@
             </div>
         </footer>
         <footer id="footerBottom" class="clearfix">
-        <div class="contentBox">
-        	<p>&copy; 2013 Highlands Voices. All Rights Reserved.</p>
-            <span>Site by The Grid Media, LLC.</span>
-            <ul class="social-icons">
-            	<li class="twitter"><a href="http://www.twitter.com/highlandsvoices"><i class="icon-twitter"></i></a></li>
-                <li class="facebook"><a href="http://www.facebook.com/HighlandsVoices"><i class="icon-facebook"></i></a></li>
-                <li class="youtube"><a href="http://www.youtube.com"><i class="icon-youtube"></i></a></li>
-                <!-- <li class="tumblr last"><a href="http://blog.highlandsvoices.com"><i class="icon-tumblr"></i></a></li> -->
-            </ul>
-           </div>
+            <div class="contentBox">
+            	<p>&copy; 2013 Highlands Voices. All Rights Reserved.</p>
+                <span>Site by The Grid Media, LLC.</span>
+                <ul class="social-icons">
+                	<li class="twitter"><a href="http://www.twitter.com/highlandsvoices"><i class="icon-twitter"></i></a></li>
+                    <li class="facebook"><a href="http://www.facebook.com/HighlandsVoices"><i class="icon-facebook"></i></a></li>
+                    <li class="youtube"><a href="http://www.youtube.com/highlandsvoices"><i class="icon-youtube"></i></a></li>
+                    <li class="tumblr last"><a href="http://blog.highlandsvoices.com"><i class="icon-tumblr"></i></a></li>
+                </ul>
+            </div>
         </footer>
-      <!--End footer-->
-    
-</div>    
+    <!--End footer-->
+</div>
 <!--End main body-->
 <script type="text/javascript" src="js/default.js"></script>
+
+<!-- MINIFY -->
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript">
+	function initialize() {
+		var latlng = new google.maps.LatLng(48.856614, 2.352222);
+		var settings = {
+			zoom: 15,
+			center: latlng,
+			mapTypeControl: true,
+			mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
+			navigationControl: true,
+			navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
+			mapTypeId: google.maps.MapTypeId.ROADMAP};
+				var map = new google.maps.Map(document.getElementById("map_canvas"), settings);
+				var contentString = '<div id="content">'+
+					'<div id="siteNotice">'+
+					'</div>'+
+					'<h3 id="firstHeading" class="firstHeading">Northern Highlands</h3>'+
+					'<div id="bodyContent">'+
+					'<p style="width:250px;">Highlands Voices is a school club and music elective at Northern Highlands Regional High School.</p>'+
+					'</div>'+
+					'</div>';
+				var infowindow = new google.maps.InfoWindow({
+					content: contentString
+				});
+
+		var companyPos = new google.maps.LatLng(48.856614, 2.352222);
+
+		var companyMarker = new google.maps.Marker({
+			position: companyPos,
+			map: map,
+			title:"Northern Highlands",
+			zIndex: 3});
+
+		google.maps.event.addListener(companyMarker, 'click', function() {
+			infowindow.open(map,companyMarker);
+		});
+	}
+</script>
 </body>
 </html>
