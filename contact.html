@@ -13,7 +13,15 @@
 .contact-info li {
 	display:inline;
 	float:left;
-	margin:20px;
+	margin:30px;
+}
+.information {
+    text-align: center;
+    margin: auto;
+    max-width: 836px;
+}
+.contact-icon {
+    font-size:72px;
 }
 </style>
 <!--[if IE]>
@@ -21,7 +29,7 @@
 <![endif]-->
 </head>
 <body onLoad="initialize()">
-<div id="wrapper">
+<div id="wrapper" class="home">
     <header id="header">
         	<div class="headerTop">
             	<div class="headerTopLine"></div>
@@ -71,29 +79,29 @@
     	    </div>
     	</div>
 	</nav>
-    	<div class="breadcrumbs">
-        	<div class="contentBox">
-        		<h2 class="pageTitle">Contact</h2>
-                <ul id="breadcrumb">
-                	<li><a href="/">Home</a> <span>/</span></li>
-                    <li>Contact</li>
-                </ul>
-            </div>
-        </div>
 
-    	<div class="fullBox">
-              <div id="map_canvas" style="width:100%; height:500px"></div>
+	<div class="breadcrumbs">
+    	<div class="contentBox">
+    		<h2 class="pageTitle">Contact</h2>
+            <ul id="breadcrumb">
+            	<li><a href="/">Home</a> <span>/</span></li>
+                <li>Contact</li>
+            </ul>
         </div>
+    </div>
+
+	<div class="fullBox">
+          <div id="map_canvas" style="width:100%; height:500px"></div>
+    </div>
 
     <div class="contentBox">
-    	<div>
+    	<div class="information">
           	<section class="contact col-leftIn">
-              <h2>Contact Info</h2>
 			  <ul class="contact-info">
-				  <li><i style="font-size:72px;" class="icon-user"></i><h3>Coach<br>Thomas Paster</h3></li>
-				  <li><i style="font-size:72px;" class="icon-phone"></i><h3>201 327 2700<br>Extension 251</h3></li>
-				  <li><i style="font-size:72px;" class="icon-envelope"></i><h3>Email Us</h3></li>
-				  <li><i style="font-size:72px;" class="icon-map-marker"></i><h3>298 Hillside Ave<br>Allendale, New Jersey</h3></li>
+				  <li><i class="icon-user contact-icon"></i><h3>Coach<br>Thomas Paster</h3></li>
+				  <li><i class="icon-phone contact-icon"></i><h3>201 327 2700<br>Extension 251</h3></li>
+				  <li><i class="icon-envelope contact-icon"></i><h3>Email Us</h3></li>
+				  <li><i class="icon-map-marker contact-icon"></i><h3>298 Hillside Ave<br>Allendale, New Jersey</h3></li>
 			  </ul>
               <div class="clearfix space25"></div>
             </section>
@@ -163,6 +171,7 @@
         </div>
     </footer>
 </div>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="js/default.js"></script>
 
 <!-- MINIFY -->

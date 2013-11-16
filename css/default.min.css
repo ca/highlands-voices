@@ -45,6 +45,9 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     font-size:250px;
     line-height:325px;
 }
+.senior img {
+    padding-top:75px;
+}
 .underclass {
     width:200px;
     height:200px;
