@@ -7,15 +7,28 @@
 <link href="css/default.min.css" rel="stylesheet" type="text/css">
 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,600,700|Telex' rel='stylesheet' type='text/css'>
 <style type="text/css">
-.error-page h1 {
-	text-align:center;
-	margin:50px;
-	margin-bottom:10px;
-	font-size:112px;
+.album {
+    border: 1px solid #eee;
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+    margin: 20px;
+    position: relative;
+    float:left;
 }
-.error-page h2 {
-	text-align:center;
-	margin-bottom:200px;
+
+.overlay {
+    position:absolute!important;
+    width:200px;
+    height:200px;
+    top:10px;
+    margin:0;
+    padding:0;
+}
+
+.album:hover .overlay {
+    visibility:visible;
+    opacity:1;
 }
 </style>
 <!--[if IE]>
@@ -84,9 +97,83 @@
     </div>
 
     <div class="contentBox">
-    	<section class="teamfolioBox row error-page">
-        	<h1>404</h1>
-            <h2>Page Not Found :(</h2>
+        <section class="teamfolioBox row error-page" style="margin:auto;">
+            <div class="album">
+                <img src="images/logo.jpg" style="display: block;width:200px;height:200px;margin-bottom:10px;">
+                <a href="">
+                    <div class="overlay" style="text-align: center;">
+                        <i class="icon-play" style="font-size: 52px;line-height: 200px;"></i>
+                    </div>
+                </a>
+                <audio id="audio_with_controls" controls="" style="width: 200px;">
+                    <source src="http://www.html5rocks.com/en/tutorials/audio/quick/test.mp3" type="audio/mpeg">
+                    <source src="http://www.html5rocks.com/en/tutorials/audio/quick/test.ogg" type="audio/ogg">
+                    <object class="playerpreview" type="application/x-shockwave-flash" data="http://www.html5rocks.com/en/tutorials/audio/quick/player_mp3_mini.swf" width="200" height="20">
+                        <param name="movie" value="http://www.html5rocks.com/en/tutorials/audio/quick/player_mp3_mini.swf">
+                        <param name="bgcolor" value="#085c68">
+                        <param name="FlashVars" value="mp3=http://www.html5rocks.com/en/tutorials/audio/quick/test.mp3">
+                        <embed href="http://www.html5rocks.com/en/tutorials/audio/quick/player_mp3_mini.swf" bgcolor="#085c68" width="200" height="20" name="movie" align="" type="application/x-shockwave-flash" flashvars="mp3=http://www.html5rocks.com/en/tutorials/audio/quick/test.mp3">
+                    </object>
+                </audio>
+                <div id="default_player_fallback"></div>
+            </div>
+            <div class="album">
+                <img src="images/logo.jpg" style="display: block;width:200px;height:200px;margin-bottom:10px;">
+                <a href="">
+                    <div class="overlay" style="text-align: center;">
+                        <i class="icon-play" style="font-size: 52px;line-height: 200px;"></i>
+                    </div>
+                </a>
+                <audio id="audio_with_controls" controls="" style="width: 200px;">
+                    <source src="http://www.html5rocks.com/en/tutorials/audio/quick/test.mp3" type="audio/mpeg">
+                    <source src="http://www.html5rocks.com/en/tutorials/audio/quick/test.ogg" type="audio/ogg">
+                    <object class="playerpreview" type="application/x-shockwave-flash" data="http://www.html5rocks.com/en/tutorials/audio/quick/player_mp3_mini.swf" width="200" height="20">
+                        <param name="movie" value="http://www.html5rocks.com/en/tutorials/audio/quick/player_mp3_mini.swf">
+                        <param name="bgcolor" value="#085c68">
+                        <param name="FlashVars" value="mp3=http://www.html5rocks.com/en/tutorials/audio/quick/test.mp3">
+                        <embed href="http://www.html5rocks.com/en/tutorials/audio/quick/player_mp3_mini.swf" bgcolor="#085c68" width="200" height="20" name="movie" align="" type="application/x-shockwave-flash" flashvars="mp3=http://www.html5rocks.com/en/tutorials/audio/quick/test.mp3">
+                    </object>
+                </audio>
+                <div id="default_player_fallback"></div>
+            </div>
+            <div class="album">
+                <img src="images/logo.jpg" style="display: block;width:200px;height:200px;margin-bottom:10px;">
+                <a href="">
+                    <div class="overlay" style="text-align: center;">
+                        <i class="icon-play" style="font-size: 52px;line-height: 200px;"></i>
+                    </div>
+                </a>
+                <audio id="audio_with_controls" controls="" style="width: 200px;">
+                    <source src="http://www.html5rocks.com/en/tutorials/audio/quick/test.mp3" type="audio/mpeg">
+                    <source src="http://www.html5rocks.com/en/tutorials/audio/quick/test.ogg" type="audio/ogg">
+                    <object class="playerpreview" type="application/x-shockwave-flash" data="http://www.html5rocks.com/en/tutorials/audio/quick/player_mp3_mini.swf" width="200" height="20">
+                        <param name="movie" value="http://www.html5rocks.com/en/tutorials/audio/quick/player_mp3_mini.swf">
+                        <param name="bgcolor" value="#085c68">
+                        <param name="FlashVars" value="mp3=http://www.html5rocks.com/en/tutorials/audio/quick/test.mp3">
+                        <embed href="http://www.html5rocks.com/en/tutorials/audio/quick/player_mp3_mini.swf" bgcolor="#085c68" width="200" height="20" name="movie" align="" type="application/x-shockwave-flash" flashvars="mp3=http://www.html5rocks.com/en/tutorials/audio/quick/test.mp3">
+                    </object>
+                </audio>
+                <div id="default_player_fallback"></div>
+            </div>
+            <div class="album">
+                <img src="images/logo.jpg" style="display: block;width:200px;height:200px;margin-bottom:10px;">
+                <a href="">
+                    <div class="overlay" style="text-align: center;">
+                        <i class="icon-play" style="font-size: 52px;line-height: 200px;"></i>
+                    </div>
+                </a>
+                <audio id="audio_with_controls" controls="" style="width: 200px;">
+                    <source src="http://www.html5rocks.com/en/tutorials/audio/quick/test.mp3" type="audio/mpeg">
+                    <source src="http://www.html5rocks.com/en/tutorials/audio/quick/test.ogg" type="audio/ogg">
+                    <object class="playerpreview" type="application/x-shockwave-flash" data="http://www.html5rocks.com/en/tutorials/audio/quick/player_mp3_mini.swf" width="200" height="20">
+                        <param name="movie" value="http://www.html5rocks.com/en/tutorials/audio/quick/player_mp3_mini.swf">
+                        <param name="bgcolor" value="#085c68">
+                        <param name="FlashVars" value="mp3=http://www.html5rocks.com/en/tutorials/audio/quick/test.mp3">
+                        <embed href="http://www.html5rocks.com/en/tutorials/audio/quick/player_mp3_mini.swf" bgcolor="#085c68" width="200" height="20" name="movie" align="" type="application/x-shockwave-flash" flashvars="mp3=http://www.html5rocks.com/en/tutorials/audio/quick/test.mp3">
+                    </object>
+                </audio>
+                <div id="default_player_fallback"></div>
+            </div>
         </section>
     </div>
 
