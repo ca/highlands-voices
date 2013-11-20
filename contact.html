@@ -6,24 +6,6 @@
 <title>Voices &middot; Contact</title>
 <link href="css/default.min.css" rel="stylesheet" type="text/css">
 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,600,700|Telex' rel='stylesheet' type='text/css'>
-<style type="text/css">
-.contact-info {
-	text-align:center;
-}
-.contact-info li {
-	display:inline;
-	float:left;
-	margin:30px;
-}
-.information {
-    text-align: center;
-    margin: auto;
-    max-width: 836px;
-}
-.contact-icon {
-    font-size:72px;
-}
-</style>
 <!--[if IE]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
@@ -56,6 +38,7 @@
             <li><a href="http://blog.highlandsvoices.com">Blog</a></li>
             <li class="current"><a href="contact">Contact</a></li>
         </ul>
+		<a class="buyTheme" href="decades">DECADES</a>
 	</nav>
 
 	<nav class="contentBox" id="mobMenu">
@@ -73,7 +56,7 @@
     	            <li><a href="gallery">Gallery</a></li>
     	            <li><a href="http://blog.highlandsvoices.com">Blog</a></li>
     	            <li><a href="contact">Contact</a></li>
-    	            <li><a href="shop">Shop</a></li>
+    	            <li><a href="decades">Decades</a></li>
     	        	<span class="clearfix"></span>
     	    	</ul>
     	    </div>
@@ -99,8 +82,8 @@
           	<section class="contact col-leftIn">
 			  <ul class="contact-info">
 				  <li><i class="icon-user contact-icon"></i><h3>Coach<br>Thomas Paster</h3></li>
-				  <li><i class="icon-phone contact-icon"></i><h3>201 327 2700<br>Extension 251</h3></li>
-				  <li><i class="icon-envelope contact-icon"></i><h3>Email Us</h3></li>
+				  <li><i class="icon-phone contact-icon"></i><h3><a href="tel:2013272700">201 327 2700</a><br>Extension 251</h3></li>
+				  <li><i class="icon-envelope contact-icon"></i><h3><a href="mailto:highlandsvoices@gmail.com">Email Us</a></h3></li>
 				  <li><i class="icon-map-marker contact-icon"></i><h3>298 Hillside Ave<br>Allendale, New Jersey</h3></li>
 			  </ul>
               <div class="clearfix space25"></div>
@@ -171,67 +154,7 @@
         </div>
     </footer>
 </div>
-<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="js/default.js"></script>
-
-<!-- MINIFY -->
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-<script type="text/javascript">
-	function initialize() {
-		var latlng = new google.maps.LatLng(41.035082, -74.144111);
-		var settings = {
-			zoom: 15,
-			center: latlng,
-			mapTypeControl: true,
-			mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
-			navigationControl: true,
-			navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
-			mapTypeId: google.maps.MapTypeId.ROADMAP};
-				var map = new google.maps.Map(document.getElementById("map_canvas"), settings);
-				var contentString = '<div id="content">'+
-					'<div id="siteNotice">'+
-					'</div>'+
-					'<h3 id="firstHeading" class="firstHeading">Northern Highlands</h3>'+
-					'<div id="bodyContent">'+
-					'<p style="width:250px;">Highlands Voices is a school club and music elective at Northern Highlands Regional High School.</p>'+
-					'</div>'+
-					'</div>';
-				var infowindow = new google.maps.InfoWindow({
-					content: contentString
-				});
-
-		var companyPos = new google.maps.LatLng(41.035082, -74.144111);
-
-		var companyMarker = new google.maps.Marker({
-			position: companyPos,
-			map: map,
-			title:"Northern Highlands",
-			zIndex: 3});
-
-		google.maps.event.addListener(companyMarker, 'click', function() {
-			infowindow.open(map,companyMarker);
-		});
-	}
-</script>
-<script type="text/javascript">
-var contact = {
-	'Name': 'Alex Vallorosi',
-	'Company': 'The Grid Media, LLC',
-	'Phone': '201 962 5195',
-	'Email': 'alex@alexvallorosi.com',
-	'Message': 'Contact me if you need a website for your company!'
-};
-console.warn(contact);
-</script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-45780012-1', 'highlandsvoices.com');
-  ga('send', 'pageview');
-
-</script>
 </body>
 </html>
